@@ -3,12 +3,13 @@ public:
     long long largestPerimeter(vector<int>& nums) {
         sort(nums.begin(), nums.end());
         int n = nums.size();
-        return solve(nums, 0, 0);
+        long long sum=0;
+        return solve(nums, 0, sum);
         // if(res>nums[n-1]) return res;
         // return -1; 
     }
 
-    long long solve(vector<int>& nums,int i,long long sum) {
+    long long solve(vector<int>& nums,int i,long long& sum) {
         if(i==nums.size()) return -1;
         sum+=nums[i];
         long long res =-1;
