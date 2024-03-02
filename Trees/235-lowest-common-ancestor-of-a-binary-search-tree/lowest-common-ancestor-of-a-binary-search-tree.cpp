@@ -8,6 +8,11 @@
  * };
  */
 
+
+#pragma GCC optimize("Ofast")
+static auto _ = [] () {ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);return 0;}();
+
+
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
