@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        vector<int> pre, suf(nums.size()), res(nums.size(),0);
+        vector<int> pre;
         int prod = 1;
         for(int& i : nums) {
             pre.push_back({prod});
